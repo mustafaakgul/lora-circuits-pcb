@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.3.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;H1&gt;Golledge Electonics - Wearables RF Component Library&lt;/H1&gt;&lt;p&gt;
+Website &lt;a href="http://www.golledge.com/"&gt;http://www.golledge.com&lt;/a&gt;
+&lt;p&gt;
+Golledge Electronics Ltd&lt;br&gt;
+Eaglewood Park&lt;br&gt;
+ILMINSTER&lt;br&gt;
+Somerset&lt;br&gt;
+TA19 9DQ&lt;br&gt;
+England
+&lt;p&gt;
+Tel: +44 1460 256 100&lt;p&gt;
+email: &lt;a href="mailto:sales@golledge.com"&gt;sales@golledge.com&lt;/a&gt;
+&lt;p&gt;
+&lt;H4&gt;Contents&lt;/H4&gt;
+The Golledge library of products recommended especially for wearable PCB designs. In addition to crystals, oscillators, TCXOs, VCXOs and RTC modules, we have also included packages and symbols to allow for the quick creation of library parts for SAW filters with examples.
+&lt;P&gt;&lt;author&gt;Created by &lt;a href="mailto:c.watts@golledge.com"&gt;Chris Watts&lt;/a&gt;&lt;/author&gt;
+&lt;P&gt;&amp;copy; Golledge Electronics Ltd 2015.</description>
+<packages>
+<package name="CM8V">
+<description>SM Crystal Low Frequency 2.0 x 1.2 mm</description>
+<smd name="P$1" x="-0.75" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="0.75" y="0" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-0.3" y1="1.1" x2="0.3" y2="1.1" width="0.254" layer="21"/>
+<wire x1="-0.3" y1="-1.1" x2="0.3" y2="-1.1" width="0.254" layer="21"/>
+<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="51"/>
+<text x="-1.5" y="-2.7" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.5" y="1.4" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-1.6" y1="1.2" x2="1.6" y2="1.2" width="0" layer="39"/>
+<wire x1="1.6" y1="-1.2" x2="-1.6" y2="-1.2" width="0" layer="39"/>
+<wire x1="-1.6" y1="1.2" x2="-1.6" y2="-1.2" width="0" layer="39"/>
+<wire x1="1.6" y1="-1.2" x2="1.6" y2="1.2" width="0" layer="39"/>
+</package>
+<package name="GSX-315">
+<description>SM Watch Crystal 3.2 x 1.5</description>
+<smd name="P$1" x="-1.3" y="0" dx="1.6" dy="1" layer="1" rot="R90"/>
+<smd name="P$2" x="1.3" y="0" dx="1.6" dy="1" layer="1" rot="R90"/>
+<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="-0.8" x2="0.5" y2="-0.8" width="0.2" layer="21"/>
+<text x="-2.1" y="1.1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.1" y="-2.4" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0" layer="39"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0" layer="39"/>
+<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0" layer="39"/>
+<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0" layer="39"/>
+</package>
+<package name="GSX-211">
+<description>SM Crystal 1.6 x 1.2 mm</description>
+<smd name="P$4" x="-0.55" y="0.4" dx="0.65" dy="0.55" layer="1" roundness="20"/>
+<smd name="P$1" x="-0.55" y="-0.4" dx="0.65" dy="0.55" layer="1" roundness="20"/>
+<smd name="P$2" x="0.55" y="-0.4" dx="0.65" dy="0.55" layer="1" roundness="20"/>
+<smd name="P$3" x="0.55" y="0.4" dx="0.65" dy="0.55" layer="1" roundness="20"/>
+<wire x1="-0.8" y1="0.6" x2="-0.8" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.6" x2="0.8" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.6" x2="-0.8" y2="0.6" width="0.127" layer="51"/>
+<wire x1="-0.7" y1="1" x2="0.7" y2="1" width="0.2" layer="21"/>
+<wire x1="-0.7" y1="-1" x2="0.7" y2="-1" width="0.2" layer="21"/>
+<text x="-1.2" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.2" y="1.3" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-1.2" y1="1" x2="1.2" y2="1" width="0" layer="39"/>
+<wire x1="1.2" y1="1" x2="1.2" y2="-1" width="0" layer="39"/>
+<wire x1="1.2" y1="-1" x2="-1.2" y2="-1" width="0" layer="39"/>
+<wire x1="-1.2" y1="-1" x2="-1.2" y2="1" width="0" layer="39"/>
+</package>
+<package name="GSX-221">
+<description>&lt;P&gt;SM Crystal 2.0 x 1.6 mm
+&lt;P&gt;Can also be used for 2.0 x 1.6 mm SAW filters.</description>
+<smd name="P$1" x="-0.685" y="-0.55" dx="0.83" dy="0.7" layer="1" roundness="20"/>
+<smd name="P$2" x="0.685" y="-0.55" dx="0.83" dy="0.7" layer="1" roundness="20"/>
+<smd name="P$3" x="0.685" y="0.55" dx="0.83" dy="0.7" layer="1" roundness="20"/>
+<smd name="P$4" x="-0.685" y="0.55" dx="0.83" dy="0.7" layer="1" roundness="20"/>
+<wire x1="-1" y1="0.8" x2="-1" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.8" x2="1" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.8" x2="1" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1" y1="0.8" x2="-1" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-0.55" y1="1.2" x2="0.55" y2="1.2" width="0.2" layer="21"/>
+<wire x1="-0.55" y1="-1.2" x2="0.65" y2="-1.2" width="0.2" layer="21"/>
+<text x="-1.5" y="-2.7" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.5" y="1.6" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-1.5" y1="1.3" x2="1.5" y2="1.3" width="0" layer="39"/>
+<wire x1="1.5" y1="1.3" x2="1.5" y2="-1.3" width="0" layer="39"/>
+<wire x1="1.5" y1="-1.3" x2="-1.5" y2="-1.3" width="0" layer="39"/>
+<wire x1="-1.5" y1="-1.3" x2="-1.5" y2="1.3" width="0" layer="39"/>
+</package>
+<package name="GSX-431">
+<description>SM Crystal 4.2 x 2.7 mm</description>
+<smd name="P$1" x="-1.5" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P$2" x="1.5" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P$3" x="1.5" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P$4" x="-1.5" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<wire x1="-2.1" y1="-1.35" x2="2.1" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="2.1" y1="-1.35" x2="2.1" y2="1.35" width="0.127" layer="51"/>
+<wire x1="2.1" y1="1.35" x2="-2.1" y2="1.35" width="0.127" layer="51"/>
+<wire x1="-2.1" y1="1.35" x2="-2.1" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="1.4" x2="0.5" y2="1.4" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="-1.4" x2="0.5" y2="-1.4" width="0.2" layer="21"/>
+<text x="-2.7" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.6" y="1.7" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-2.9" y1="-2.1" x2="2.9" y2="-2.1" width="0" layer="39"/>
+<wire x1="2.9" y1="-2.1" x2="2.9" y2="2.1" width="0" layer="39"/>
+<wire x1="2.9" y1="2.1" x2="-2.9" y2="2.1" width="0" layer="39"/>
+<wire x1="-2.9" y1="2.1" x2="-2.9" y2="-2.1" width="0" layer="39"/>
+</package>
+<package name="OSC2520">
+<description>SM crystal, oscillator, and TCXO 2.5 x 2.0 mm</description>
+<smd name="P$1" x="-0.885" y="-0.71" dx="0.97" dy="0.82" layer="1"/>
+<smd name="P$2" x="0.885" y="-0.71" dx="0.97" dy="0.82" layer="1"/>
+<smd name="P$3" x="0.885" y="0.71" dx="0.97" dy="0.82" layer="1"/>
+<smd name="P$4" x="-0.885" y="0.71" dx="0.97" dy="0.82" layer="1"/>
+<wire x1="-1.25" y1="-1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="1.4" x2="0.2" y2="1.4" width="0.2" layer="21"/>
+<wire x1="-0.2" y1="-1.4" x2="0.2" y2="-1.4" width="0.2" layer="21"/>
+<wire x1="-2.1" y1="-1.8" x2="2.1" y2="-1.8" width="0" layer="39"/>
+<wire x1="2.1" y1="-1.8" x2="2.1" y2="1.8" width="0" layer="39"/>
+<wire x1="2.1" y1="1.8" x2="-2.1" y2="1.8" width="0" layer="39"/>
+<wire x1="-2.1" y1="1.8" x2="-2.1" y2="-1.8" width="0" layer="39"/>
+<text x="-2.1" y="1.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="OSC3225">
+<description>SM oscillator 3.2 x 2.5 mm</description>
+<smd name="P$1" x="-1.1" y="-0.875" dx="1.2" dy="0.95" layer="1"/>
+<smd name="P$2" x="1.1" y="-0.875" dx="1.2" dy="0.95" layer="1"/>
+<smd name="P$3" x="1.1" y="0.875" dx="1.2" dy="0.95" layer="1"/>
+<smd name="P$4" x="-1.1" y="0.875" dx="1.2" dy="0.95" layer="1"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="1.3" x2="0.2" y2="1.3" width="0.2" layer="21"/>
+<wire x1="-0.2" y1="-1.3" x2="0.2" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-2.2" x2="2.5" y2="-2.2" width="0" layer="39"/>
+<wire x1="2.5" y1="-2.2" x2="2.5" y2="2.2" width="0" layer="39"/>
+<wire x1="2.5" y1="2.2" x2="-2.5" y2="2.2" width="0" layer="39"/>
+<wire x1="-2.5" y1="2.2" x2="-2.5" y2="-2.2" width="0" layer="39"/>
+<text x="-2.5" y="1.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-2.9" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.6" y1="0.1" x2="-1.6" y2="-0.1" width="0.2" layer="21"/>
+<wire x1="1.6" y1="0.1" x2="1.6" y2="-0.1" width="0.2" layer="21"/>
+</package>
+<package name="OSC3225PADS6">
+<description>SM Oscillator 6 pad 3.2 x 2.5 mm</description>
+<smd name="P$1" x="-1.3" y="-1.05" dx="1" dy="0.8" layer="1"/>
+<smd name="P$3" x="1.3" y="-1.05" dx="1" dy="0.8" layer="1"/>
+<smd name="P$4" x="1.3" y="1.05" dx="1" dy="0.8" layer="1"/>
+<smd name="P$6" x="-1.3" y="1.05" dx="1" dy="0.8" layer="1"/>
+<smd name="P$2" x="0" y="-1.05" dx="0.8" dy="0.8" layer="1"/>
+<smd name="P$5" x="0" y="1.05" dx="0.8" dy="0.8" layer="1"/>
+<wire x1="-1.6" y1="-1.3" x2="1.6" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.3" x2="1.6" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.3" x2="-1.6" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.3" x2="-1.6" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="0.3" x2="-1.6" y2="-0.3" width="0.2" layer="21"/>
+<wire x1="1.6" y1="0.3" x2="1.6" y2="-0.3" width="0.2" layer="21"/>
+<wire x1="-2.6" y1="-2.3" x2="2.6" y2="-2.3" width="0" layer="39"/>
+<wire x1="2.6" y1="-2.3" x2="2.6" y2="2.3" width="0" layer="39"/>
+<wire x1="2.6" y1="2.3" x2="-2.6" y2="2.3" width="0" layer="39"/>
+<wire x1="-2.6" y1="2.3" x2="-2.6" y2="-2.3" width="0" layer="39"/>
+<text x="-2.6" y="1.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.6" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="OSC5032">
+<description>SM Oscillator 5.0 x 3.2 mm</description>
+<smd name="P$1" x="-1.25" y="-1.1" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P$2" x="1.25" y="-1.1" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P$3" x="1.25" y="1.1" dx="1.4" dy="1.2" layer="1"/>
+<smd name="P$4" x="-1.25" y="1.1" dx="1.4" dy="1.2" layer="1"/>
+<wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-2.6" x2="3.5" y2="-2.6" width="0" layer="39"/>
+<wire x1="3.5" y1="-2.6" x2="3.5" y2="2.6" width="0" layer="39"/>
+<wire x1="3.5" y1="2.6" x2="-3.5" y2="2.6" width="0" layer="39"/>
+<wire x1="-3.5" y1="2.6" x2="-3.5" y2="-2.6" width="0" layer="39"/>
+<wire x1="-2.3" y1="1.6" x2="-2.5" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-1.6" x2="-2.3" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="-0.2" y1="1.6" x2="0.2" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-0.2" y1="-1.6" x2="0.2" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="2.3" y1="1.6" x2="2.5" y2="1.6" width="0.2" layer="21"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="2.5" y1="-1.6" x2="2.3" y2="-1.6" width="0.2" layer="21"/>
+<text x="-3.5" y="1.9" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-3.3" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+<package name="OSC7050">
+<description>SM Oscillator 7.0 x 5.0 mm</description>
+<smd name="P$1" x="-2.55" y="-2.1" dx="1.8" dy="2" layer="1"/>
+<smd name="P$2" x="2.55" y="-2.1" dx="1.8" dy="2" layer="1"/>
+<smd name="P$3" x="2.55" y="2.1" dx="1.8" dy="2" layer="1"/>
+<smd name="P$4" x="-2.55" y="2.1" dx="1.8" dy="2" layer="1"/>
+<wire x1="-3.5" y1="-2.5" x2="3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-2.5" x2="3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="2.5" x2="-3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-4.9" y1="-3.9" x2="4.9" y2="-3.9" width="0" layer="39"/>
+<wire x1="4.9" y1="-3.9" x2="4.9" y2="3.9" width="0" layer="39"/>
+<wire x1="4.9" y1="3.9" x2="-4.9" y2="3.9" width="0" layer="39"/>
+<wire x1="-4.9" y1="3.9" x2="-4.9" y2="-3.9" width="0" layer="39"/>
+<wire x1="-1.3" y1="2.5" x2="1.3" y2="2.5" width="0.2" layer="21"/>
+<wire x1="-1.3" y1="-2.5" x2="1.3" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="0.8" x2="-3.5" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="3.5" y1="0.8" x2="3.5" y2="-0.8" width="0.2" layer="21"/>
+<text x="-4.9" y="3.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.9" y="-4.7" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="OSC7050PADS6">
+<description>SM Oscillator 7.0 x 5.0 mm 6 pad variant</description>
+<smd name="P$1" x="-2.55" y="-1.95" dx="1.6" dy="1.5" layer="1"/>
+<smd name="P$2" x="0" y="-1.95" dx="1.6" dy="1.5" layer="1"/>
+<smd name="P$3" x="2.55" y="-1.95" dx="1.6" dy="1.5" layer="1"/>
+<smd name="P$4" x="2.55" y="1.95" dx="1.6" dy="1.5" layer="1"/>
+<smd name="P$5" x="0" y="1.95" dx="1.6" dy="1.5" layer="1"/>
+<smd name="P$6" x="-2.55" y="1.95" dx="1.6" dy="1.5" layer="1"/>
+<wire x1="-3.5" y1="-2.5" x2="3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-2.5" x2="3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="2.5" x2="-3.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-5.3" y1="-4.3" x2="5.3" y2="-4.3" width="0" layer="39"/>
+<wire x1="5.3" y1="-4.3" x2="5.3" y2="4.3" width="0" layer="39"/>
+<wire x1="5.3" y1="4.3" x2="-5.3" y2="4.3" width="0" layer="39"/>
+<wire x1="-5.3" y1="4.3" x2="-5.3" y2="-4.3" width="0" layer="39"/>
+<wire x1="-1.4" y1="2.5" x2="-1.1" y2="2.5" width="0.2" layer="21"/>
+<wire x1="1.1" y1="2.5" x2="1.4" y2="2.5" width="0.2" layer="21"/>
+<wire x1="-1.4" y1="-2.5" x2="-1.1" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="1.1" y1="-2.5" x2="1.4" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="0.9" x2="-3.5" y2="-0.9" width="0.2" layer="21"/>
+<wire x1="3.5" y1="0.9" x2="3.5" y2="-0.9" width="0.2" layer="21"/>
+<text x="-5.3" y="2.9" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.3" y="-4.2" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+<package name="TCOSC3225">
+<description>TCXO 3.2 x 2.5 mm</description>
+<smd name="P$1" x="-1.3" y="-0.9" dx="1" dy="1" layer="1"/>
+<smd name="P$2" x="1.3" y="-0.9" dx="1" dy="1" layer="1"/>
+<smd name="P$3" x="1.3" y="0.9" dx="1" dy="1" layer="1"/>
+<smd name="P$4" x="-1.3" y="0.9" dx="1" dy="1" layer="1"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="1.3" x2="0.5" y2="1.3" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="-1.3" x2="0.5" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-2.2" x2="2.5" y2="-2.2" width="0" layer="39"/>
+<wire x1="2.5" y1="-2.2" x2="2.5" y2="2.2" width="0" layer="39"/>
+<wire x1="2.5" y1="2.2" x2="-2.5" y2="2.2" width="0" layer="39"/>
+<wire x1="-2.5" y1="2.2" x2="-2.5" y2="-2.2" width="0" layer="39"/>
+<text x="-2.5" y="1.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-2.9" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.6" y1="0.1" x2="-1.6" y2="-0.1" width="0.2" layer="21"/>
+<wire x1="1.6" y1="0.1" x2="1.6" y2="-0.1" width="0.2" layer="21"/>
+</package>
+<package name="RTC-C3">
+<description>RTC module C3 package</description>
+<smd name="P$1" x="-1.1" y="1.6" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$2" x="-1.1" y="0.8" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$3" x="-1.1" y="0" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$4" x="-1.1" y="-0.8" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$5" x="-1.1" y="-1.6" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$6" x="1.1" y="-1.6" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$7" x="1.1" y="-0.8" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$8" x="1.1" y="0" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$9" x="1.1" y="0.8" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$10" x="1.1" y="1.6" dx="0.5" dy="0.8" layer="1" rot="R270"/>
+<wire x1="-1.25" y1="1.85" x2="-1.25" y2="-1.85" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1.85" x2="1.25" y2="-1.85" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.85" x2="1.25" y2="1.85" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1.85" x2="-1.25" y2="1.85" width="0.127" layer="51"/>
+<wire x1="0.4" y1="1.9" x2="-0.4" y2="1.9" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="-1.9" x2="0.4" y2="-1.9" width="0.2" layer="21"/>
+<text x="-1.6" y="2.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.6" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.15" y1="2.75" x2="-2.15" y2="-2.75" width="0" layer="39"/>
+<wire x1="-2.15" y1="-2.75" x2="2.15" y2="-2.75" width="0" layer="39"/>
+<wire x1="2.15" y1="-2.75" x2="2.15" y2="2.75" width="0" layer="39"/>
+<wire x1="2.15" y1="2.75" x2="-2.15" y2="2.75" width="0" layer="39"/>
+</package>
+<package name="RTC-C7">
+<description>RTC in C7 package</description>
+<smd name="P$1" x="-0.6" y="1.35" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.6" y="0.45" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$3" x="-0.6" y="-0.45" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$4" x="-0.6" y="-1.35" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$5" x="0.6" y="-1.35" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$6" x="0.6" y="-0.45" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$7" x="0.6" y="0.45" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$8" x="0.6" y="1.35" dx="0.5" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-0.75" y1="1.6" x2="-0.75" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="-1.6" x2="0.75" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="0.75" y1="-1.6" x2="0.75" y2="1.6" width="0.127" layer="51"/>
+<wire x1="0.75" y1="1.6" x2="-0.75" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.9" x2="0.1" y2="1.9" width="0.2" layer="21"/>
+<wire x1="-0.1" y1="-1.9" x2="0.1" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="-1.3" y1="-0.8" x2="-1.3" y2="-1" width="0.2" layer="21"/>
+<wire x1="-1.3" y1="0.1" x2="-1.3" y2="-0.1" width="0.2" layer="21"/>
+<wire x1="-1.3" y1="1" x2="-1.3" y2="0.8" width="0.2" layer="21"/>
+<wire x1="1.3" y1="1" x2="1.3" y2="0.8" width="0.2" layer="21"/>
+<wire x1="1.3" y1="0.1" x2="1.3" y2="-0.1" width="0.2" layer="21"/>
+<wire x1="1.3" y1="-0.8" x2="1.3" y2="-1" width="0.2" layer="21"/>
+<text x="-1.2" y="1.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-3.1" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.5" y1="2.4" x2="1.5" y2="2.4" width="0" layer="39"/>
+<wire x1="1.5" y1="2.4" x2="1.5" y2="-2.4" width="0" layer="39"/>
+<wire x1="1.5" y1="-2.4" x2="-1.5" y2="-2.4" width="0" layer="39"/>
+<wire x1="-1.5" y1="-2.4" x2="-1.5" y2="2.4" width="0" layer="39"/>
+</package>
+<package name="SAW5X5">
+<description>5 mm square package for SAW filters, 8 pads.</description>
+<smd name="P$1" x="-1.865" y="1.27" dx="1.47" dy="0.84" layer="1"/>
+<smd name="P$2" x="-1.865" y="0" dx="1.47" dy="0.84" layer="1"/>
+<smd name="P$3" x="-1.865" y="-1.27" dx="1.47" dy="0.84" layer="1"/>
+<smd name="P$4" x="0" y="-1.865" dx="1.47" dy="0.84" layer="1" rot="R90"/>
+<smd name="P$5" x="1.865" y="-1.27" dx="1.47" dy="0.84" layer="1"/>
+<smd name="P$6" x="1.865" y="0" dx="1.47" dy="0.84" layer="1"/>
+<smd name="P$7" x="1.865" y="1.27" dx="1.47" dy="0.84" layer="1"/>
+<smd name="P$8" x="0" y="1.46" dx="2.28" dy="0.84" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="2.5" x2="-2.5" y2="2.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="2" width="0.2" layer="21"/>
+<wire x1="0.8" y1="2.5" x2="2.5" y2="2.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="2" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-2" x2="-2.5" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-0.8" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="0.8" y1="-2.5" x2="2.5" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="-2" width="0.2" layer="21"/>
+<wire x1="-4.2" y1="4.2" x2="-4.2" y2="-4.2" width="0" layer="39"/>
+<wire x1="-4.2" y1="-4.2" x2="4.2" y2="-4.2" width="0" layer="39"/>
+<wire x1="4.2" y1="-4.2" x2="4.2" y2="4.2" width="0" layer="39"/>
+<wire x1="4.2" y1="4.2" x2="-4.2" y2="4.2" width="0" layer="39"/>
+<text x="-2.8" y="2.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.7" y="-4.1" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SAW7X5">
+<description>SAW SM packege  7 x 5 mm. 10 pads.</description>
+<smd name="P$1" x="2.2" y="1.27" dx="1.4" dy="0.8" layer="1"/>
+<smd name="P$2" x="2.2" y="0" dx="1.4" dy="0.8" layer="1"/>
+<smd name="P$3" x="2.2" y="-1.27" dx="1.4" dy="0.8" layer="1"/>
+<smd name="P$4" x="1.27" y="-3.2" dx="1.4" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$5" x="-1.27" y="-3.2" dx="1.4" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$6" x="-2.2" y="-1.27" dx="1.4" dy="0.8" layer="1"/>
+<smd name="P$7" x="-2.2" y="0" dx="1.4" dy="0.8" layer="1"/>
+<smd name="P$8" x="-2.2" y="1.27" dx="1.4" dy="0.8" layer="1"/>
+<smd name="P$9" x="-1.27" y="3.2" dx="1.4" dy="0.8" layer="1" roundness="75" rot="R90"/>
+<smd name="P$10" x="1.27" y="3.2" dx="1.4" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="3.5" x2="2.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="3.5" x2="2.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-3.5" x2="-2.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-3.5" x2="-2.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="2" y1="3.5" x2="2.5" y2="3.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="3.5" x2="2.5" y2="2" width="0.2" layer="21"/>
+<wire x1="0.5" y1="3.5" x2="-0.5" y2="3.5" width="0.2" layer="21"/>
+<wire x1="-2" y1="3.5" x2="-2.5" y2="3.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="3.5" x2="-2.5" y2="2" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-2" x2="-2.5" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="-3.5" x2="-2" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="-3.5" x2="0.5" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="2" y1="-3.5" x2="2.5" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="2.5" y1="-3.5" x2="2.5" y2="-2" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="5.5" x2="-4.5" y2="-5.5" width="0" layer="39"/>
+<wire x1="-4.5" y1="-5.5" x2="4.5" y2="-5.5" width="0" layer="39"/>
+<wire x1="4.5" y1="-5.5" x2="4.5" y2="5.5" width="0" layer="39"/>
+<wire x1="4.5" y1="5.5" x2="-4.5" y2="5.5" width="0" layer="39"/>
+<text x="-3" y="4.1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-5.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SAW3.8X3.8P8">
+<description>8 pad variant of the 3.8 mm square SAW package.</description>
+<smd name="P$1" x="-1.41" y="1.27" dx="1.19" dy="0.81" layer="1"/>
+<smd name="P$2" x="-1.41" y="0" dx="1.19" dy="0.81" layer="1"/>
+<smd name="P$3" x="-1.41" y="-1.27" dx="1.19" dy="0.81" layer="1"/>
+<smd name="P$4" x="0" y="-1.397" dx="1.19" dy="0.81" layer="1" rot="R90"/>
+<smd name="P$5" x="1.41" y="-1.27" dx="1.19" dy="0.81" layer="1"/>
+<smd name="P$6" x="1.41" y="0" dx="1.19" dy="0.81" layer="1"/>
+<smd name="P$7" x="1.41" y="1.27" dx="1.19" dy="0.81" layer="1"/>
+<smd name="P$8" x="0" y="1.155" dx="1.7" dy="0.81" layer="1" rot="R90"/>
+<wire x1="-1.9" y1="1.9" x2="-1.9" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="-1.9" y1="-1.9" x2="1.9" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="1.9" y1="-1.9" x2="1.9" y2="1.9" width="0.127" layer="51"/>
+<wire x1="1.9" y1="1.9" x2="-1.9" y2="1.9" width="0.127" layer="51"/>
+<wire x1="-0.7" y1="2" x2="-2" y2="2" width="0.2" layer="21"/>
+<wire x1="0.7" y1="2" x2="2" y2="2" width="0.2" layer="21"/>
+<wire x1="0.7" y1="-2" x2="2" y2="-2" width="0.2" layer="21"/>
+<wire x1="-0.7" y1="-2" x2="-2" y2="-2" width="0.2" layer="21"/>
+<text x="-2.1" y="2.3" size="1.27" layer="21">&gt;NAME</text>
+<text x="-2.1" y="-3.6" size="1.27" layer="21">&gt;VALUE</text>
+<wire x1="-3.6" y1="3.6" x2="-3.6" y2="-3.6" width="0" layer="39"/>
+<wire x1="-3.6" y1="-3.6" x2="3.6" y2="-3.6" width="0" layer="39"/>
+<wire x1="3.6" y1="-3.6" x2="3.6" y2="3.6" width="0" layer="39"/>
+<wire x1="3.6" y1="3.6" x2="-3.6" y2="3.6" width="0" layer="39"/>
+</package>
+<package name="SAW3.8X3.8P6">
+<description>6 pad variant of 3.8mm square SAW package</description>
+<smd name="P$1" x="-1.15" y="1.27" dx="2.3" dy="0.7" layer="1"/>
+<smd name="P$2" x="-1.6" y="0" dx="1.4" dy="0.7" layer="1"/>
+<smd name="P$3" x="-1.6" y="-1.27" dx="1.4" dy="0.7" layer="1"/>
+<smd name="P$4" x="1.6" y="-1.27" dx="1.4" dy="0.7" layer="1"/>
+<smd name="P$5" x="1.6" y="0" dx="1.4" dy="0.7" layer="1"/>
+<smd name="P$6" x="1.6" y="1.27" dx="1.4" dy="0.7" layer="1"/>
+<wire x1="-1.9" y1="1.9" x2="-1.9" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="-1.9" y1="-1.9" x2="1.9" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="1.9" y1="-1.9" x2="1.9" y2="1.9" width="0.127" layer="51"/>
+<wire x1="1.9" y1="1.9" x2="-1.9" y2="1.9" width="0.127" layer="51"/>
+<wire x1="1.9" y1="1.95" x2="-1.9" y2="1.95" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="-1.95" x2="1.9" y2="-1.95" width="0.2" layer="21"/>
+<wire x1="-2.7" y1="2.7" x2="-2.7" y2="-2.7" width="0" layer="39"/>
+<wire x1="-2.7" y1="-2.7" x2="2.7" y2="-2.7" width="0" layer="39"/>
+<wire x1="2.7" y1="-2.7" x2="2.7" y2="2.7" width="0" layer="39"/>
+<wire x1="2.7" y1="2.7" x2="-2.7" y2="2.7" width="0" layer="39"/>
+<text x="-2.4" y="2.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4" y="-3.6" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SAW3X3P8">
+<description>&lt;p&gt;3.0 x 3.0 mm square SAW package with 8 pads
+&lt;p&gt;MP05063 used as design source.</description>
+<smd name="P$1" x="-1.2" y="1.13" dx="0.8" dy="0.94" layer="1"/>
+<smd name="P$2" x="-1.2" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="P$3" x="-1.2" y="-1.13" dx="0.8" dy="0.94" layer="1"/>
+<smd name="P$4" x="0" y="-1.13" dx="0.8" dy="0.94" layer="1"/>
+<smd name="P$5" x="1.2" y="-1.13" dx="0.8" dy="0.94" layer="1"/>
+<smd name="P$6" x="1.2" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="P$7" x="1.2" y="1.13" dx="0.8" dy="0.94" layer="1"/>
+<smd name="P$8" x="0" y="0.9" dx="0.8" dy="1.4" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.9" x2="-1.9" y2="1.9" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="1.9" x2="-1.9" y2="1.4" width="0.2" layer="21"/>
+<wire x1="1.4" y1="1.9" x2="1.9" y2="1.9" width="0.2" layer="21"/>
+<wire x1="1.9" y1="1.9" x2="1.9" y2="1.4" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="-1.3" x2="-1.9" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="-1.9" x2="-1.3" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="1.3" y1="-1.9" x2="1.9" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="1.9" y1="-1.9" x2="1.9" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0" layer="39"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0" layer="39"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0" layer="39"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0" layer="39"/>
+<text x="-2" y="2.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.1" y="-3.5" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+<package name="SAW3X3P6">
+<description>3.0 x 3.0 mm SAW 6 pad package.</description>
+<smd name="P$1" x="-0.75" y="1.2" dx="1.7" dy="0.8" layer="1"/>
+<smd name="P$2" x="-1.1" y="0" dx="1" dy="0.8" layer="1"/>
+<smd name="P$3" x="-1.1" y="-1.2" dx="1" dy="0.8" layer="1"/>
+<smd name="P$4" x="1.1" y="-1.2" dx="1" dy="0.8" layer="1"/>
+<smd name="P$5" x="1.1" y="0" dx="1" dy="0.8" layer="1"/>
+<smd name="P$6" x="1.1" y="1.2" dx="1" dy="0.8" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-1.5" x2="0.3" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-2.8" y1="2.8" x2="-2.8" y2="-2.8" width="0" layer="39"/>
+<wire x1="-2.8" y1="-2.8" x2="2.8" y2="-2.8" width="0" layer="39"/>
+<wire x1="2.8" y1="-2.8" x2="2.8" y2="2.8" width="0" layer="39"/>
+<wire x1="2.8" y1="2.8" x2="-2.8" y2="2.8" width="0" layer="39"/>
+<text x="-1.9" y="1.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.9" y="-3.1" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SAW2.5X2.0P5">
+<description>&lt;P&gt;2.5 x 2.0 mm 5 pad SAW package
+&lt;P&gt;Pad numbering taken from 1.4 x 1.1 mm SAW package to avoid missing pad numbers.</description>
+<smd name="P$1" x="-0.94" y="-0.685" dx="0.71" dy="0.71" layer="1"/>
+<smd name="P$2" x="0" y="-0.685" dx="0.65" dy="0.71" layer="1"/>
+<smd name="P$3" x="0.94" y="0" dx="0.71" dy="0.71" layer="1"/>
+<smd name="P$4" x="0" y="0.685" dx="0.65" dy="0.71" layer="1"/>
+<smd name="P$5" x="-0.94" y="0.685" dx="0.71" dy="0.71" layer="1"/>
+<wire x1="-1.25" y1="-1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="0.1" x2="-1.55" y2="-0.1" width="0.2" layer="21"/>
+<wire x1="0.65" y1="1.3" x2="1.5" y2="1.3" width="0.2" layer="21"/>
+<wire x1="1.5" y1="1.3" x2="1.5" y2="0.7" width="0.2" layer="21"/>
+<wire x1="1.5" y1="-0.7" x2="1.5" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="0.65" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="-2.2" y1="2" x2="-2.2" y2="-2" width="0" layer="39"/>
+<wire x1="-2.2" y1="-2" x2="2.2" y2="-2" width="0" layer="39"/>
+<wire x1="2.2" y1="-2" x2="2.2" y2="2" width="0" layer="39"/>
+<wire x1="2.2" y1="2" x2="-2.2" y2="2" width="0" layer="39"/>
+<text x="-2.2" y="1.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.2" y="-2.9" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+<package name="SAW1.4X1.1P5">
+<description>1.4 x 1.1 mm 5 pad SAW packege</description>
+<smd name="P$1" x="-0.5875" y="-0.2875" dx="0.425" dy="0.325" layer="1"/>
+<smd name="P$3" x="0.5875" y="0" dx="0.425" dy="0.325" layer="1"/>
+<smd name="P$5" x="-0.5875" y="0.2875" dx="0.425" dy="0.325" layer="1"/>
+<smd name="P$2" x="0" y="-0.3875" dx="0.25" dy="0.525" layer="1"/>
+<smd name="P$4" x="0" y="0.3875" dx="0.25" dy="0.525" layer="1"/>
+<wire x1="-0.7" y1="0.55" x2="-0.7" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="-0.7" y1="-0.55" x2="0.7" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="0.7" y1="-0.55" x2="0.7" y2="0.55" width="0.127" layer="51"/>
+<wire x1="0.7" y1="0.55" x2="-0.7" y2="0.55" width="0.127" layer="51"/>
+<wire x1="0.45" y1="0.75" x2="0.9" y2="0.75" width="0.2" layer="21"/>
+<wire x1="0.9" y1="0.75" x2="0.9" y2="0.5" width="0.2" layer="21"/>
+<wire x1="0.9" y1="-0.5" x2="0.9" y2="-0.75" width="0.2" layer="21"/>
+<wire x1="0.9" y1="-0.75" x2="0.45" y2="-0.75" width="0.2" layer="21"/>
+<wire x1="-0.45" y1="-0.75" x2="-0.7" y2="-0.75" width="0.2" layer="21"/>
+<wire x1="-0.45" y1="0.75" x2="-0.7" y2="0.75" width="0.2" layer="21"/>
+<wire x1="-1.7" y1="1.25" x2="-1.7" y2="-1.25" width="0" layer="39"/>
+<wire x1="-1.7" y1="-1.25" x2="1.7" y2="-1.25" width="0" layer="39"/>
+<wire x1="1.7" y1="-1.25" x2="1.7" y2="1.25" width="0" layer="39"/>
+<wire x1="1.7" y1="1.25" x2="-1.7" y2="1.25" width="0" layer="39"/>
+<text x="-1.7" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.7" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SAW2.5X2.0P4">
+<description>4 pad SAW filter package 2.5 x 2.0 mm.</description>
+<smd name="P$1" x="-0.775" y="-0.645" dx="1.04" dy="0.78" layer="1" roundness="50"/>
+<smd name="P$2" x="0.775" y="-0.645" dx="1.04" dy="0.78" layer="1"/>
+<smd name="P$3" x="0.775" y="0.645" dx="1.04" dy="0.78" layer="1"/>
+<smd name="P$4" x="-0.775" y="0.645" dx="1.04" dy="0.78" layer="1"/>
+<wire x1="-1.25" y1="-1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-0.05" y1="1.35" x2="0.05" y2="1.35" width="0.2" layer="21"/>
+<wire x1="-0.15" y1="-1.35" x2="0.05" y2="-1.35" width="0.2" layer="21"/>
+<wire x1="-1.6" y1="0.05" x2="-1.6" y2="-0.15" width="0.2" layer="21"/>
+<wire x1="1.6" y1="0.05" x2="1.6" y2="-0.05" width="0.2" layer="21"/>
+<wire x1="-2.25" y1="2" x2="-2.25" y2="-2" width="0" layer="39"/>
+<wire x1="-2.25" y1="-2" x2="2.25" y2="-2" width="0" layer="39"/>
+<wire x1="2.25" y1="-2" x2="2.25" y2="2" width="0" layer="39"/>
+<wire x1="2.25" y1="2" x2="-2.25" y2="2" width="0" layer="39"/>
+<text x="-1.6" y="1.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.6" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="OSC2016">
+<description>2.0 x 1.6 mm Osc. Narrow pads</description>
+<smd name="P$1" x="-0.9" y="-0.6" dx="0.6" dy="0.8" layer="1"/>
+<smd name="P$2" x="0.9" y="-0.6" dx="0.6" dy="0.8" layer="1"/>
+<smd name="P$3" x="0.9" y="0.6" dx="0.6" dy="0.8" layer="1"/>
+<smd name="P$4" x="-0.9" y="0.6" dx="0.6" dy="0.8" layer="1"/>
+<wire x1="-1" y1="-0.8" x2="1" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.8" x2="1" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1" y1="0.8" x2="-1" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.8" x2="-1" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-0.3" y1="-0.8" x2="0.3" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="-1.7" y1="-1.5" x2="1.7" y2="-1.5" width="0" layer="39"/>
+<wire x1="1.7" y1="-1.5" x2="1.7" y2="1.5" width="0" layer="39"/>
+<wire x1="1.7" y1="1.5" x2="-1.7" y2="1.5" width="0" layer="39"/>
+<wire x1="-1.7" y1="1.5" x2="-1.7" y2="-1.5" width="0" layer="39"/>
+<text x="-1.7" y="1.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.7" y="-2.8" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="OSC3215">
+<description>Microcrystal SM osc</description>
+<smd name="P$1" x="-1.35" y="-0.6" dx="1" dy="0.8" layer="1"/>
+<smd name="P$2" x="1.35" y="-0.6" dx="1" dy="0.8" layer="1"/>
+<smd name="P$3" x="1.35" y="0.6" dx="1" dy="0.8" layer="1"/>
+<smd name="P$4" x="-1.35" y="0.6" dx="1" dy="0.8" layer="1"/>
+<wire x1="-1.65" y1="-0.8" x2="1.65" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1.65" y1="-0.8" x2="1.65" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.65" y1="0.8" x2="-1.65" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="0.8" x2="-1.65" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="-0.8" x2="0.5" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="-2.6" y1="1.8" x2="2.6" y2="1.8" width="0" layer="39"/>
+<wire x1="2.6" y1="1.8" x2="2.6" y2="-1.8" width="0" layer="39"/>
+<wire x1="2.6" y1="-1.8" x2="-2.6" y2="-1.8" width="0" layer="39"/>
+<wire x1="-2.6" y1="-1.8" x2="-2.6" y2="1.8" width="0" layer="39"/>
+<text x="-2.6" y="1.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.6" y="-2.5" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="Q">
+<description>Crystal resonator</description>
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-4.699" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="-1.016" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+</symbol>
+<symbol name="Q4PIN">
+<description>Crystal with two package ground connections.</description>
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-4.699" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="-1.016" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="3" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<pin name="2" x="-2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="4" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="XO_EN">
+<description>XO tristate CMOS output</description>
+<pin name="EN" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="CK" x="17.78" y="0" length="middle" direction="out" function="clk" rot="R180"/>
+<pin name="VDD" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
+<wire x1="12.7" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="VCXO_SIN">
+<description>VC(TC)XO clipped sine output</description>
+<pin name="TUNE" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="OP" x="17.78" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="VDD" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="7.62" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<text x="-12.7" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="XO_SIN">
+<description>TCXO sine wave output, no tune or enable function.</description>
+<pin name="NC" x="-17.78" y="0" length="middle" direction="nc"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="OP" x="17.78" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="VDD" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="7.62" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<text x="-12.7" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="VCXO_CMOS">
+<description>VCXO CMOS output</description>
+<pin name="TUNE" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="CK" x="17.78" y="0" length="middle" direction="out" function="clk" rot="R180"/>
+<pin name="VDD" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="VCXO_EN_CMOS">
+<description>VCXO with enable function, CMOS output</description>
+<pin name="EN" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="GND" x="2.54" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="CK" x="17.78" y="0" length="middle" direction="out" function="clk" rot="R180"/>
+<pin name="VDD" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
+<wire x1="12.7" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<pin name="TUNE" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="NC" x="-5.08" y="-15.24" length="middle" direction="nc" rot="R90"/>
+<text x="-12.7" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="RV8803">
+<description>Real Time Clock with event logging</description>
+<pin name="CLKOE" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="VDD" x="0" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="CLKOUT" x="15.24" y="5.08" length="middle" direction="out" function="clk" rot="R180"/>
+<pin name="SCL" x="-15.24" y="5.08" length="middle" direction="in" function="clk"/>
+<pin name="SDA" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-20.32" length="middle" direction="pwr" rot="R90"/>
+<pin name="INT" x="15.24" y="10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="EVI" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="16.51" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="BANDPASS-4GND">
+<description>Bandpass filter with input and output grounds along with 2 case grounds</description>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.778" x2="-3.556" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-1.778" x2="-1.778" y2="-0.508" width="0.1524" layer="94" curve="71.075356"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="5.958497"/>
+<wire x1="-1.27" y1="1.27" x2="-0.762" y2="2.286" width="0.1524" layer="94" curve="-27.197759"/>
+<wire x1="-0.762" y1="2.286" x2="0.508" y2="2.286" width="0.1524" layer="94" curve="-99.675484"/>
+<wire x1="0.508" y1="2.286" x2="1.016" y2="1.27" width="0.1524" layer="94" curve="-27.194019"/>
+<wire x1="1.016" y1="1.27" x2="1.524" y2="-0.508" width="0.1524" layer="94" curve="5.957035"/>
+<wire x1="1.524" y1="-0.508" x2="3.556" y2="-1.778" width="0.1524" layer="94" curve="78.141167"/>
+<text x="-4.826" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="GND@1" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="OUT" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="GND@2" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="CASE@1" x="-2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="CASE@2" x="2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="BANDPASS-3GND">
+<description>&lt;P&gt;Bandpass filter with input and output grounds along with 1 case ground
+&lt;P&gt;Can also be used for filters that are balanced at either or both ends.</description>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.778" x2="-3.556" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-1.778" x2="-1.778" y2="-0.508" width="0.1524" layer="94" curve="71.075356"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="5.958497"/>
+<wire x1="-1.27" y1="1.27" x2="-0.762" y2="2.286" width="0.1524" layer="94" curve="-27.197759"/>
+<wire x1="-0.762" y1="2.286" x2="0.508" y2="2.286" width="0.1524" layer="94" curve="-99.675484"/>
+<wire x1="0.508" y1="2.286" x2="1.016" y2="1.27" width="0.1524" layer="94" curve="-27.194019"/>
+<wire x1="1.016" y1="1.27" x2="1.524" y2="-0.508" width="0.1524" layer="94" curve="5.957035"/>
+<wire x1="1.524" y1="-0.508" x2="3.556" y2="-1.778" width="0.1524" layer="94" curve="78.141167"/>
+<text x="-5.08" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="INBAR_OR_GND@1" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="OUT" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="OUTBAR_OR_GND@2" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="CASE@1" x="0" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="BANDPASS-4PIN">
+<description>&lt;P&gt;Bandpass filter with 2 input and 2 output pads.
+&lt;P&gt;Each side can be balanced or signal + ground.</description>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.778" x2="-3.556" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-1.778" x2="-1.778" y2="-0.508" width="0.1524" layer="94" curve="71.075356"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="5.958497"/>
+<wire x1="-1.27" y1="1.27" x2="-0.762" y2="2.286" width="0.1524" layer="94" curve="-27.197759"/>
+<wire x1="-0.762" y1="2.286" x2="0.508" y2="2.286" width="0.1524" layer="94" curve="-99.675484"/>
+<wire x1="0.508" y1="2.286" x2="1.016" y2="1.27" width="0.1524" layer="94" curve="-27.194019"/>
+<wire x1="1.016" y1="1.27" x2="1.524" y2="-0.508" width="0.1524" layer="94" curve="5.957035"/>
+<wire x1="1.524" y1="-0.508" x2="3.556" y2="-1.778" width="0.1524" layer="94" curve="78.141167"/>
+<text x="-5.334" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="INBAR_OR_GND@1" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="OUT" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="OUTBAR_OR_GND@2" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="BANDPASS-5GND">
+<description>&lt;P&gt;Bandpass filter with input and output grounds along with 3 case grounds.
+&lt;P&gt;Can also be used for filters with balanced inputs or outputs.</description>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.778" x2="-3.556" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-1.778" x2="-1.778" y2="-0.508" width="0.1524" layer="94" curve="71.075356"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="5.958497"/>
+<wire x1="-1.27" y1="1.27" x2="-0.762" y2="2.286" width="0.1524" layer="94" curve="-27.197759"/>
+<wire x1="-0.762" y1="2.286" x2="0.508" y2="2.286" width="0.1524" layer="94" curve="-99.675484"/>
+<wire x1="0.508" y1="2.286" x2="1.016" y2="1.27" width="0.1524" layer="94" curve="-27.194019"/>
+<wire x1="1.016" y1="1.27" x2="1.524" y2="-0.508" width="0.1524" layer="94" curve="5.957035"/>
+<wire x1="1.524" y1="-0.508" x2="3.556" y2="-1.778" width="0.1524" layer="94" curve="78.141167"/>
+<text x="-5.842" y="6.096" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="INBAR_OR_GND@1" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="OUT" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="OUTBAR_OR_GND@2" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="CASE@1" x="-2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="CASE@2" x="2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="P$1" x="0" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="BANDPASS-6GND">
+<description>&lt;P&gt;Bandpass filter with input and output grounds along with 4 case grounds.
+&lt;P&gt;Can also be used for filters with balanced inputs or outputs.</description>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.778" x2="-3.556" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-1.778" x2="-1.778" y2="-0.508" width="0.1524" layer="94" curve="71.075356"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="5.958497"/>
+<wire x1="-1.27" y1="1.27" x2="-0.762" y2="2.286" width="0.1524" layer="94" curve="-27.197759"/>
+<wire x1="-0.762" y1="2.286" x2="0.508" y2="2.286" width="0.1524" layer="94" curve="-99.675484"/>
+<wire x1="0.508" y1="2.286" x2="1.016" y2="1.27" width="0.1524" layer="94" curve="-27.194019"/>
+<wire x1="1.016" y1="1.27" x2="1.524" y2="-0.508" width="0.1524" layer="94" curve="5.957035"/>
+<wire x1="1.524" y1="-0.508" x2="3.556" y2="-1.778" width="0.1524" layer="94" curve="78.141167"/>
+<text x="-7.62" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-10.16" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="INBAR_OR_GND@1" x="-10.16" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="OUT" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="OUTBAR_OR_GND@2" x="10.16" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="CASE@1" x="-5.08" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="CASE@2" x="5.08" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="P$1" x="-2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="P$2" x="2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="BANDPASS-8GND">
+<description>&lt;P&gt;Bandpass filter with input and output grounds along with 6 case grounds.
+&lt;P&gt;Can also be used for filters with balanced inputs or outputs.</description>
+<wire x1="-10.16" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.778" x2="-3.556" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-1.778" x2="-1.778" y2="-0.508" width="0.1524" layer="94" curve="71.075356"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.27" y2="1.27" width="0.1524" layer="94" curve="5.958497"/>
+<wire x1="-1.27" y1="1.27" x2="-0.762" y2="2.286" width="0.1524" layer="94" curve="-27.197759"/>
+<wire x1="-0.762" y1="2.286" x2="0.508" y2="2.286" width="0.1524" layer="94" curve="-99.675484"/>
+<wire x1="0.508" y1="2.286" x2="1.016" y2="1.27" width="0.1524" layer="94" curve="-27.194019"/>
+<wire x1="1.016" y1="1.27" x2="1.524" y2="-0.508" width="0.1524" layer="94" curve="5.957035"/>
+<wire x1="1.524" y1="-0.508" x2="3.556" y2="-1.778" width="0.1524" layer="94" curve="78.141167"/>
+<text x="-10.16" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-12.7" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="INBAR_OR_GND@1" x="-12.7" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="OUT" x="10.16" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="OUTBAR_OR_GND@2" x="10.16" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="CASE@1" x="-5.08" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="CASE@2" x="5.08" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="P$1" x="-2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="P$2" x="2.54" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="CASE@3" x="-7.62" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="P$3" x="0" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="RV1805">
+<description>&lt;h3&gt;Real Time Clock Module - I2C Bus&lt;/h3&gt;</description>
+<pin name="VDD" x="0" y="20.32" length="middle" direction="pwr" rot="R270"/>
+<pin name="CLK/INT" x="15.24" y="5.08" length="middle" direction="out" function="dotclk" rot="R180"/>
+<pin name="SCL" x="-15.24" y="5.08" length="middle" direction="in" function="clk"/>
+<pin name="SDA" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="GND" x="2.54" y="-20.32" length="middle" direction="pwr" rot="R90"/>
+<pin name="RST" x="15.24" y="10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="PSW" x="15.24" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="V_BACKUP" x="-15.24" y="-5.08" length="middle" direction="pas"/>
+<pin name="RC_CAP" x="-15.24" y="-10.16" length="middle" direction="pas"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="16.51" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="WDI" x="-15.24" y="0" length="middle" direction="in"/>
+</symbol>
+<symbol name="XO_EXTRAGND">
+<description>XO tristate CMOS output</description>
+<pin name="NC" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="CK" x="17.78" y="0" length="middle" direction="out" function="clk" rot="R180"/>
+<pin name="VDD" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
+<wire x1="12.7" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CM8V" prefix="Y">
+<description>&lt;H4&gt;Crystal |SM| 2.0 x 1.2 x 0.6 mm |Tuning Fork (Watch)| Frequency Range: 32.768kHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ultra low profile - 0.6mm
+&lt;LI&gt;High shock &amp; vibration resistance
+&lt;LI&gt;Extended temperature range option
+&lt;LI&gt;AEC-Q200 Automotive option
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/xtl_sm/cm8vt.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CM8V">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.6"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GSX-315" prefix="Y">
+<description>&lt;H4&gt;Crystal |SM| 3.2 x 1.5 x 0.9mm |Tuning Fork (Watch)| Frequency Range: 32.768kHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;AEC-Q200 automotive qualified
+&lt;LI&gt;Miniature ceramic package with metal lid
+&lt;LI&gt;Low cost for volume applications
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/xtl_sm/gsx315.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GSX-315">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.9"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GSX-211" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;Crystal |SM| 1.6 x 1.2 x 0.45mm | Frequency Range: 24.0-54.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ultra-miniature for maximum space saving
+&lt;LI&gt;Ideal for Bluetooth, NFC, Smartcard, wireless, wearables etc
+&lt;LI&gt;Metal lid grounded to minimise EMI
+&lt;LI&gt;Seam sealed for excellent long-term stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/xtl_sm/gsx211.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="Q4PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GSX-211">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.45"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GSX-221" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;Crystal |SM| 2.0 x 1.6 x 0.55mm | Frequency Range: 16.0 - 56.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ultra-miniature for maximum space saving
+&lt;LI&gt;Ideal for Bluetooth / Wireless applications
+&lt;LI&gt;High reliability &amp; tight stability
+&lt;LI&gt;Metal lid can be grounded to minimise EMI
+&lt;LI&gt;Seam sealed for excellent long-term stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/xtl_sm/gsx221.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="Q4PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GSX-221">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.6"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GAO-3201" prefix="Y">
+<description>&lt;H4&gt;Oscillator |SM| 2.5 x 2.0 x 0.8mm |CMOS output| Frequency Range: 32.768kHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Excellent temperature stability
+&lt;LI&gt;Low current consumption
+&lt;LI&gt;AT-cut resonator + dividing circuit
+&lt;LI&gt;Miniature ceramic package with metal lid
+&lt;LI&gt;Competitive pricing
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/osc_sm/gao3201.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC2520">
+<connects>
+<connect gate="G$1" pin="CK" pad="P$3"/>
+<connect gate="G$1" pin="EN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.8"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GFO-3301" prefix="Y">
+<description>&lt;H4&gt;Oscillator |SM| 3.2 x 2.5 x 0.9mm |CMOS output| Frequency Range: 32.768kHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Extremely low current consumption
+&lt;LI&gt;Operational from 1.5V ~ 5.5V
+&lt;LI&gt;Tuning fork resonator
+&lt;LI&gt;Miniature ceramic package with metal lid
+&lt;LI&gt;Competitive pricing
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/osc_sm/gfo3301.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC3225">
+<connects>
+<connect gate="G$1" pin="CK" pad="P$3"/>
+<connect gate="G$1" pin="EN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.9"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GXO-3201" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;Oscillator |SM| 2.5 x 2.0 x 0.9mm | Frequency Range: 0.75 - 50.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Low current consumption
+&lt;LI&gt;Enable / disable tristate function
+&lt;LI&gt;Miniature ceramic package with metal lid
+&lt;LI&gt;Competitive pricing
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/osc_sm/gxo3201.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC2520">
+<connects>
+<connect gate="G$1" pin="CK" pad="P$3"/>
+<connect gate="G$1" pin="EN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.9"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GXO-3301" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;Oscillator |SM| 3.2 x 2.5 x 1.0mm | Frequency Range: 0.625 - 75.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;High stability for WiMAX, LAN etc
+&lt;LI&gt;Low current consumption
+&lt;LI&gt;Miniature ceramic package with metal lid
+&lt;LI&gt;Enable / disable tristate function
+&lt;LI&gt;Competitive pricing
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/osc_sm/gxo3301.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC3225">
+<connects>
+<connect gate="G$1" pin="CK" pad="P$3"/>
+<connect gate="G$1" pin="EN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GTXO-253V" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;VCTCXO |SM| 2.5 x 2.0 x 1.0 mm | Frequency Range: 10.0 - 52.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ideally suited for GPS applications
+&lt;LI&gt;Supply voltage from 1.8V ~ 3.6V
+&lt;LI&gt;Low power consumption
+&lt;LI&gt;Miniature SM package
+&lt;LI&gt;Excellent frequency stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/tcxos/gtxo253.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCXO_SIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC2520">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OP" pad="P$3"/>
+<connect gate="G$1" pin="TUNE" pad="P$1"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GTXO-93V" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;VCTCXO |SM| 3.2 x 2.5 x 1.2 mm | Frequency Range: 10.0 - 52.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Analogue compensation - no steps
+&lt;LI&gt;Ideally suited for GPS applications
+&lt;LI&gt;Supply voltage from 1.8V ~ 3.6V
+&lt;LI&gt;Low power consumption
+&lt;LI&gt;Miniature SM package
+&lt;LI&gt;Excellent frequency stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/tcxos/gtxo93.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCXO_SIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TCOSC3225">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OP" pad="P$3"/>
+<connect gate="G$1" pin="TUNE" pad="P$1"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.2"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GTXO-93T" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;TCXO |SM| 3.2 x 2.5 x 1.2 mm | Frequency Range: 10.0 - 52.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Analogue compensation - no steps
+&lt;LI&gt;Ideally suited for GPS applications
+&lt;LI&gt;Supply voltage from 1.8V ~ 3.6V
+&lt;LI&gt;Low power consumption
+&lt;LI&gt;Miniature SM package
+&lt;LI&gt;Excellent frequency stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/tcxos/gtxo93.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_SIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TCOSC3225">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="NC" pad="P$1"/>
+<connect gate="G$1" pin="OP" pad="P$3"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.2"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GVXO-331" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;VCXO |SM| CMOS Output |3.2 x 2.5 x 1.0 mm| Frequency Range: 1.5 - 64.44MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Low current consumption
+&lt;LI&gt;Choice of supply voltages
+&lt;LI&gt;Miniature SM package
+&lt;LI&gt;Competitive pricing
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/vcxos/gvxo331.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCXO_CMOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC3225">
+<connects>
+<connect gate="G$1" pin="CK" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="TUNE" pad="P$1"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV8803C7" prefix="U">
+<description>&lt;H4&gt;Real Time Clock Module |I&lt;sup&gt;2&lt;/sup&gt;C Bus| Ultra Low Power |Temperature compensated&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;High accuracy, ultra low power
+&lt;LI&gt;Built-in crystal for adjustment-free operation
+&lt;LI&gt;Time stamp event input function
+&lt;LI&gt;I2C-Bus interface (up to 400kHz)
+&lt;LI&gt;Programmable alarm, timer and interrupt
+&lt;LI&gt;User RAM
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/rtcs/rv8803c7.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RV8803" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RTC-C7">
+<connects>
+<connect gate="G$1" pin="CLKOE" pad="P$4"/>
+<connect gate="G$1" pin="CLKOUT" pad="P$2"/>
+<connect gate="G$1" pin="EVI" pad="P$7"/>
+<connect gate="G$1" pin="GND" pad="P$5"/>
+<connect gate="G$1" pin="INT" pad="P$6"/>
+<connect gate="G$1" pin="SCL" pad="P$8"/>
+<connect gate="G$1" pin="SDA" pad="P$1"/>
+<connect gate="G$1" pin="VDD" pad="P$3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.8"/>
+<attribute name="MPN" value="MP06786"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GTXO-253T" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;TCXO |SM| 2.5 x 2.0 x 1.0 mm | Frequency Range: 10.0 - 52.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ideally suited for GPS applications
+&lt;LI&gt;Supply voltage from 1.8V ~ 3.6V
+&lt;LI&gt;Low power consumption
+&lt;LI&gt;Miniature SM package
+&lt;LI&gt;Excellent frequency stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/tcxos/gtxo253.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_SIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC2520">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="NC" pad="P$1"/>
+<connect gate="G$1" pin="OP" pad="P$3"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MP01594" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 159.01250MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-8GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW7X5">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$4"/>
+<connect gate="G$1" pin="CASE@2" pad="P$5"/>
+<connect gate="G$1" pin="CASE@3" pad="P$10"/>
+<connect gate="G$1" pin="IN" pad="P$7"/>
+<connect gate="G$1" pin="INBAR_OR_GND@1" pad="P$1"/>
+<connect gate="G$1" pin="OUT" pad="P$2"/>
+<connect gate="G$1" pin="OUTBAR_OR_GND@2" pad="P$8"/>
+<connect gate="G$1" pin="P$1" pad="P$9"/>
+<connect gate="G$1" pin="P$2" pad="P$6"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.8"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MA07107" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 169MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-6GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW5X5">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$3"/>
+<connect gate="G$1" pin="CASE@2" pad="P$4"/>
+<connect gate="G$1" pin="IN" pad="P$2"/>
+<connect gate="G$1" pin="INBAR_OR_GND@1" pad="P$1"/>
+<connect gate="G$1" pin="OUT" pad="P$6"/>
+<connect gate="G$1" pin="OUTBAR_OR_GND@2" pad="P$5"/>
+<connect gate="G$1" pin="P$1" pad="P$7"/>
+<connect gate="G$1" pin="P$2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.7"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MP05063" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 404.0MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-6GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW3X3P8">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$1"/>
+<connect gate="G$1" pin="CASE@2" pad="P$3"/>
+<connect gate="G$1" pin="IN" pad="P$2"/>
+<connect gate="G$1" pin="INBAR_OR_GND@1" pad="P$4"/>
+<connect gate="G$1" pin="OUT" pad="P$6"/>
+<connect gate="G$1" pin="OUTBAR_OR_GND@2" pad="P$5"/>
+<connect gate="G$1" pin="P$1" pad="P$7"/>
+<connect gate="G$1" pin="P$2" pad="P$8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MP04518" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 418.0MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-4GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW3X3P6">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$4"/>
+<connect gate="G$1" pin="CASE@2" pad="P$1"/>
+<connect gate="G$1" pin="GND@1" pad="P$3"/>
+<connect gate="G$1" pin="GND@2" pad="P$6"/>
+<connect gate="G$1" pin="IN" pad="P$2"/>
+<connect gate="G$1" pin="OUT" pad="P$5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.4"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MA09246" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 433.920MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-4GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW3.8X3.8P6">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$4"/>
+<connect gate="G$1" pin="CASE@2" pad="P$1"/>
+<connect gate="G$1" pin="GND@1" pad="P$3"/>
+<connect gate="G$1" pin="GND@2" pad="P$6"/>
+<connect gate="G$1" pin="IN" pad="P$2"/>
+<connect gate="G$1" pin="OUT" pad="P$5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.5"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MP03718" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 402.0MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-6GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW3.8X3.8P8">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$8"/>
+<connect gate="G$1" pin="CASE@2" pad="P$5"/>
+<connect gate="G$1" pin="IN" pad="P$2"/>
+<connect gate="G$1" pin="INBAR_OR_GND@1" pad="P$3"/>
+<connect gate="G$1" pin="OUT" pad="P$6"/>
+<connect gate="G$1" pin="OUTBAR_OR_GND@2" pad="P$7"/>
+<connect gate="G$1" pin="P$1" pad="P$4"/>
+<connect gate="G$1" pin="P$2" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.4"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MP05871" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 897.0MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-3GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW1.4X1.1P5">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$5"/>
+<connect gate="G$1" pin="IN" pad="P$3"/>
+<connect gate="G$1" pin="INBAR_OR_GND@1" pad="P$2"/>
+<connect gate="G$1" pin="OUT" pad="P$1"/>
+<connect gate="G$1" pin="OUTBAR_OR_GND@2" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.5"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MA09739" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 1642.50MHz&lt;/H4&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-4PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW2.5X2.0P4">
+<connects>
+<connect gate="G$1" pin="IN" pad="P$1"/>
+<connect gate="G$1" pin="INBAR_OR_GND@1" pad="P$4"/>
+<connect gate="G$1" pin="OUT" pad="P$3"/>
+<connect gate="G$1" pin="OUTBAR_OR_GND@2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GSX-331">
+<description>&lt;H4&gt;Crystal |SM| 3.2 x 2.5 x 0.8mm | Frequency Range: 10.0-125.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Metal lid can be grounded to minimise EMI
+&lt;LI&gt;Seam sealed for excellent long-term stability
+&lt;LI&gt;Tight specifications available
+&lt;LI&gt;Ultra-miniature for maximum space saving
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/xtl_sm/gsx331.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="Q4PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC3225">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.8"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MA08663" prefix="FL">
+<description>&lt;H4&gt;SAW Filter Example 907.50MHz&lt;/H4&gt;
+&lt;p&gt;Singled in to Balanced out operation&lt;br&gt;
+Terminating source impedance: ZS = 50 ohm&lt;br&gt;
+Terminating load impedance: ZL = 150 ohm // 60nH&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.golledge.com/docs/products/saw/gsrf_list.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BANDPASS-3GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SAW2.5X2.0P5">
+<connects>
+<connect gate="G$1" pin="CASE@1" pad="P$2"/>
+<connect gate="G$1" pin="IN" pad="P$3"/>
+<connect gate="G$1" pin="INBAR_OR_GND@1" pad="P$4"/>
+<connect gate="G$1" pin="OUT" pad="P$1"/>
+<connect gate="G$1" pin="OUTBAR_OR_GND@2" pad="P$5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV1805C3" prefix="U">
+<description>&lt;H4&gt;Real Time Clock Module| I&lt;sup&gt;2&lt;/sup&gt;C Bus  |Low Power&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Extremely low current consumption
+&lt;LI&gt;Miniature package with integrated crystal
+&lt;LI&gt;Backup battery input (internal switchover)
+&lt;LI&gt;Trickle charger, power management &amp; switch
+&lt;LI&gt;Programmable alarm, timer and interrupt
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/rtcs/rv1805c3.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RV1805" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RTC-C3">
+<connects>
+<connect gate="G$1" pin="CLK/INT" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$6"/>
+<connect gate="G$1" pin="PSW" pad="P$8"/>
+<connect gate="G$1" pin="RC_CAP" pad="P$2"/>
+<connect gate="G$1" pin="RST" pad="P$10"/>
+<connect gate="G$1" pin="SCL" pad="P$4"/>
+<connect gate="G$1" pin="SDA" pad="P$5"/>
+<connect gate="G$1" pin="VDD" pad="P$1"/>
+<connect gate="G$1" pin="V_BACKUP" pad="P$7"/>
+<connect gate="G$1" pin="WDI" pad="P$9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.9"/>
+<attribute name="MPN" value="MP06292"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GTXO-203V" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;VCTCXO |SM| 2.0 x 1.6 x 0.7mm | Frequency Range: 26.0 - 52.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ideally suited for wearable applications
+&lt;LI&gt;Supply voltage from 1.8V ~ 3.6V
+&lt;LI&gt;Low power consumption
+&lt;LI&gt;Miniature SM package
+&lt;LI&gt;Excellent frequency stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/tcxos/gtxo203.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCXO_SIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC2016">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OP" pad="P$3"/>
+<connect gate="G$1" pin="TUNE" pad="P$1"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.7"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GTXO-203T" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;TCXO |SM| 2.0 x 1.6 x 0.7mm | Frequency Range: 26.0 - 52.0MHz&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ideally suited for wearable applications
+&lt;LI&gt;Supply voltage from 1.8V ~ 3.6V
+&lt;LI&gt;Low power consumption
+&lt;LI&gt;Miniature SM package
+&lt;LI&gt;Excellent frequency stability
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/tcxos/gtxo203.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_SIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC2016">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="NC" pad="P$1"/>
+<connect gate="G$1" pin="OP" pad="P$3"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.7"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GXO-2201" prefix="Y" uservalue="yes">
+<description>&lt;H4&gt;Oscillator |SM| 2.0 x 1.6 x 0.75mm | Frequency Range: 1.5 - 54.0MHz &lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Low voltage supply options
+&lt;LI&gt;Enable / disable tristate function
+&lt;LI&gt;Miniature ceramic package with metal lid
+&lt;LI&gt;Competitive pricing for high volumes
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/osc_sm/gxo2201.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GSX-221">
+<connects>
+<connect gate="G$1" pin="CK" pad="P$3"/>
+<connect gate="G$1" pin="EN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="0.85"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OV7604C7" prefix="Y">
+<description>&lt;H4&gt;Oscillator |SM| CMOS output | 3.2 x 1.5 x 1.0mm| Frequency Range: 32.768kHz | Low Power&lt;/H4&gt;
+&lt;P&gt;&lt;UL&gt;
+&lt;LI&gt;Ultra low power consumption
+&lt;LI&gt;World's smallest LF oscillator
+&lt;LI&gt;Tight frequency tolerance
+&lt;LI&gt;Industrial and extended temperature ranges
+&lt;LI&gt;High shock and vibration resistance
+&lt;/UL&gt;&lt;P&gt;
+&lt;a href="http://www.golledge.com/docs/products/osc_sm/ov7604c7.htm?src=eagle"&gt;Datasheet and Purchasing Information&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XO_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSC3215">
+<connects>
+<connect gate="G$1" pin="CK" pad="P$1"/>
+<connect gate="G$1" pin="EN" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.0"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="4" number="39" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="4" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="0" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="0" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="KEMET_C0603C475K8PACTU_0">
+                    <description>CAP CER 4.7UF 10V X5R 0603</description>
+                    <wire layer="51" y2="0.475" width="0.15" x2="-0.875" y1="-0.475" x1="-0.875"/>
+                    <wire layer="51" y2="0.475" width="0.15" x2="0.875" y1="0.475" x1="-0.875"/>
+                    <wire layer="51" y2="-0.475" width="0.15" x2="0.875" y1="0.475" x1="0.875"/>
+                    <wire layer="51" y2="-0.475" width="0.15" x2="-0.875" y1="-0.475" x1="0.875"/>
+                    <wire layer="39" y2="0.6" width="0.1" x2="-1.2" y1="-0.6" x1="-1.2"/>
+                    <wire layer="39" y2="0.6" width="0.1" x2="1.2" y1="0.6" x1="-1.2"/>
+                    <wire layer="39" y2="-0.6" width="0.1" x2="1.2" y1="0.6" x1="1.2"/>
+                    <wire layer="39" y2="-0.6" width="0.1" x2="-1.2" y1="-0.6" x1="1.2"/>
+                    <wire layer="21" y2="0.825" width="0.15" x2="0.8" y1="0.825" x1="-0.8"/>
+                    <wire layer="21" y2="-0.825" width="0.15" x2="0.8" y1="-0.825" x1="-0.8"/>
+                    <text layer="25" align="bottom-left" y="-0.375" x="1.4" rot="R0" size="1.0">&gt;NAME</text>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.75" dy="0.9" y="0.0" x="-0.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.75" dy="0.9" y="0.0" x="0.6" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="KEMET_C0603C475K8PACTU_0_0">
+                    <description>CAP CER 4.7UF 10V X5R 0603</description>
+                    <wire layer="94" y2="-1.778" width="0.508" x2="0.0" y1="-1.778" x1="5.08"/>
+                    <wire layer="94" y2="-3.302" width="0.508" x2="0.0" y1="-3.302" x1="5.08"/>
+                    <wire layer="94" y2="-1.778" width="0.15" x2="2.54" y1="-4.4408920985e-16" x1="2.54"/>
+                    <wire layer="94" y2="-3.556" width="0.15" x2="2.54" y1="-5.08" x1="2.54"/>
+                    <text layer="95" align="top-left" y="0.254" x="6.096" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-5.08" x="6.096" rot="R0" size="2.54">4.7µF</text>
+                    <text layer="95" align="top-left" y="-2.54" x="6.096" rot="R0" size="2.54">10V</text>
+                    <pin name="1" visible="pad" length="short" y="2.54" x="2.54" rot="R270"/>
+                    <pin name="2" visible="pad" length="short" y="-7.62" x="2.54" rot="R90"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="C" name="KEMET_C0603C475K8PACTU">
+                    <description>CAP CER 4.7UF 10V X5R 0603</description>
+                    <gates>
+                        <gate name="G$0" symbol="KEMET_C0603C475K8PACTU_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="KEMET_C0603C475K8PACTU_0_0" package="KEMET_C0603C475K8PACTU_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="1"/>
+                                <connect gate="G$0" pad="2" pin="2"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_part_number" value="80-C0603C475K8P"/>
+                                    <attribute name="mouser_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 10volts 4.7uF 10% X5R"/>
+                                    <attribute name="temperature_range_high" value="+85°C"/>
+                                    <attribute name="MPN" value="C0603C475K8PACTU"/>
+                                    <attribute name="digikey_description" value="CAP CER 4.7UF 10V X5R 0603"/>
+                                    <attribute name="digikey_part_number" value="399-5503-1-ND"/>
+                                    <attribute name="prefix" value="C"/>
+                                    <attribute name="datasheet" value="https://search.kemet.com/component-edge/download/datasheet/C0603C475K8PACTU.pdf"/>
+                                    <attribute name="lead_free" value="yes"/>
+                                    <attribute name="mfg_package_ident" value="C0603"/>
+                                    <attribute name="voltage" value="10V"/>
+                                    <attribute name="temperature_range_low" value="-55°C"/>
+                                    <attribute name="capacitance" value="4.7µF"/>
+                                    <attribute name="rohs" value="yes"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="MF" value="Kemet"/>
+                                    <attribute name="package" value="0603"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
